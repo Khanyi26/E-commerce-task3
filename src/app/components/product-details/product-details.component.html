@@ -1,0 +1,9 @@
+<!-- A page showing detialed information about a specific product-->
+<div class="product-detials" *ngIf="product">
+<h2>{{ product?.title }}</h2>
+<p>{{ product?.description }}</p>
+<p>{{ product?.price | currency }}</p>
+<button routerLink = "/dashboard">Back to Products</button>
+</div>
+
+

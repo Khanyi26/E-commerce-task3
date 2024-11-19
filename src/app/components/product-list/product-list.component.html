@@ -1,0 +1,9 @@
+<!--Product list template-->
+
+<div *ngFor = "let product of products">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.price | currency }}</p>
+    <button (click) = "viewProduct(product.id)">View Details</button>
+    <button (click) = "editProduct(product.id)">Edit</button>
+    <button (click) = "deleteProduct(product.id)">Delete</button>
+</div>
